@@ -274,16 +274,21 @@ section#portfolio {
 
   div.row {
     a.portfolio-link {
+      width: 32%;
+      max-width: 368px;
+
       &:hover {
-        @include transition-hover;
-        -webkit-box-shadow: 0px 10px 22px 0px rgba(0,0,0,0.28);
-        -moz-box-shadow: 0px 10px 22px 0px rgba(0,0,0,0.28);
-        box-shadow: 0px 10px 22px 0px rgba(0,0,0,0.28);
+        img {
+          @include transition-hover;
+          -webkit-box-shadow: 0px 10px 22px 0px rgba(0,0,0,0.28);
+          -moz-box-shadow: 0px 10px 22px 0px rgba(0,0,0,0.28);
+          box-shadow: 0px 10px 22px 0px rgba(0,0,0,0.28);
+
+        }
       }
 
       img {
-        width: 95%;
-        max-width: 368px;
+        width: 100%;
       }
     }
   }
